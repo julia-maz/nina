@@ -1,0 +1,326 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #000000;
+}
+
+/* Cover/Header Section  */
+
+#cover {
+    background-image: url('../images/daniela-araya-iEJ--5kY4lU-unsplash.jpg');
+    height: 700px;
+    background-size: cover;
+}
+  
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.icon-right {
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+.icons img {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.icons img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=30);
+}
+
+li {
+   list-style: none;
+   color: #fff;
+   font-size: 25px;
+   font-weight: 400;
+   line-height: 3rem;
+   text-align: justify;
+   text-decoration: none;
+}
+
+li:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=30);
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: -0.08em;
+    margin-top: 100px;
+} 
+
+ /* About Section */
+
+#in-season {
+    background-color: #e6d9c8;
+    height: 700px;
+    display: flex;
+}
+
+.in-season-content {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.in-season-content p {
+    line-height: 1.5rem;
+}
+
+.in-season-content h3 {
+    padding-bottom: 20px;
+}
+
+
+
+ /* Gallery Section */
+
+#gallery {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+.food-pics {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+#gallery .food-pics img {
+    width: 100%;
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Opening Hours Section */
+
+#opening-hours {
+    background-color: #e6e3e0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+#opening-hours p {
+padding-bottom: 80px;
+line-height: 1.5rem;
+}
+
+#opening-hours h3 {
+    padding-bottom: 30px;
+    }
+
+.all-content {
+    margin: auto;
+    width: 100%; 
+}
+
+
+.restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 150px;
+    padding-left: 150px;
+
+}
+
+
+.hours-content {
+    padding-right: 250px;
+    padding-left: 250px;
+
+}
+
+
+/* Menu Section */
+
+#menu {
+    display: flex;
+    height: 700px;
+    background-color: #eecf64;
+}
+
+button {
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+background-color: #ffecb7;
+border: none;
+border-radius: 12px;
+text-transform: uppercase;
+font-size: 16px;
+font-family: 'Sofia Pro', sans-serif;
+opacity: 0.6;
+transition: 0.3s;
+cursor: pointer;
+}
+
+button:hover {opacity: 1}
+
+.menu-content img {
+    width: 10%;
+}
+
+.menu-content p {
+    line-height: 1.5rem;  
+    padding-bottom: 15px;
+}
+
+.menu-content {
+    padding-right: 250px;
+    padding-left: 250px;
+    flex-direction: row;
+}
+
+#footer-content {
+    height: 300px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+ /* Footer section */
+
+#footer-content .footer-column {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-column {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+
+#text-decoration h4 {
+    text-decoration: underline;
+}
+
+#justify-content h5 {
+    line-height: 1rem;
+}
+
+#logo h1 {
+    font-size: 60px;
+    color: #eecf64;
+    letter-spacing: -0.08em;
+}
+
+.writing-mode {
+    writing-mode: vertical-rl;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    top: 400px;
+    font-family: 'Sofia Pro', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #000;
+    padding: 10px 2px;
+  }
+
+
+ /* Mobile */
+
+ /* About Section */
+
+ @media only screen and (max-width: 800px) {
+    .in-season-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+ /* Gallery Section */
+
+@media only screen and (max-width: 700px) {
+    #gallery {
+        display: none;
+    }
+}
+
+/* Menu Section */
+
+@media only screen and (max-width: 1000px) {
+    .menu-content {
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
+}
+
+ /* Opening Hours Section */
+
+@media only screen and (max-width: 1000px) {
+
+    #opening-hours {
+        background-color: #e6e3e0;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurants {
+        padding-left: 30px;
+        padding-right: 30px; 
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .hours-content {
+        padding-left: 30px;
+        padding-right: 30px; 
+}
+}
+
+/* Footer */
+
+@media only screen and (max-width: 1000px) {
+    .parent-column {
+        padding-left: 30px;
+        padding-right: 30px; 
+        display: flex;
+        flex-direction: column;
+    }
+}
+
